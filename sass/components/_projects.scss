@@ -1,13 +1,19 @@
+.section-projects {
+   padding: 4.5rem 0;
+   background-color: $color-grey-bg;
+}
+
 .project-nav {
    text-align: center;
-   
+   margin-bottom: 4rem;
+
    &__link {
       display: inline-block;
       font-size: 1.4rem;
       margin-right: 1rem;
       text-transform: uppercase;
       cursor: pointer;
-   
+
       &:last-child {
          padding-right: 0;
       }
@@ -25,8 +31,6 @@
 
    &__img {
       display: block;
-      max-width: 100%;
-      height: auto;
       filter: grayscale(100%);
    }
 
@@ -46,12 +50,9 @@
       filter: grayscale(0%);
       transition: all .2s ease;
    }
-   
+
    &:hover &__info {
       opacity: 0;
       transition: all .1s ease;
    }
 }
-
-
-

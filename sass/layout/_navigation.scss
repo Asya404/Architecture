@@ -2,14 +2,17 @@
    display: flex;
    justify-content: space-between;
    padding-top: 3rem;
-   
-   &__list {
-      display: flex;
-      list-style: none;
-   }
 
-   &__item {
-      margin-right: 3rem;
+   &__list {
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      align-items: center;
+
+      @include respond(tab-land) {
+         width: 50%;
+      }
    }
 
    &__link {
@@ -23,6 +26,15 @@
          text-decoration: none;
          color: $color-primary;
          text-transform: uppercase;
+         padding-bottom: 0.5rem;
+         border-bottom: 1.5px solid transparent;
+         transition: border-bottom 0.2s;
+      }
+
+      &:hover {
+         color: $color-white;
+         border-bottom: 1.5px solid $color-white;
+         transition: all 0.1s ease;
       }
    }
 }

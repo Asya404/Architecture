@@ -8,7 +8,6 @@ body {
 
 .heading-primary {
    color: $color-white;
-   margin-bottom: 2rem;
 
    &--main {
       display: block;
@@ -37,7 +36,7 @@ body {
    }
 
    &__divider {
-      content:"";
+      content: "";
       position: relative;
       display: block;
       font-family: 'Playfair Display', serif;
@@ -48,7 +47,12 @@ body {
       margin: 0 auto;
       margin-bottom: 1rem;
 
-      &::after, &::before {
+      @include respond(tab-port) {
+         max-width: 40%;
+      }
+
+      &::after,
+      &::before {
          position: absolute;
          content: "";
          display: block;
@@ -56,13 +60,20 @@ body {
          width: 4.5rem;
          top: 50%;
       }
-      &::after {right: 0;}   
-      &::before {left: 0;}
+
+      &::after {
+         right: 0;
+      }
+
+      &::before {
+         left: 0;
+      }
 
       &--white {
          color: $color-white;
-         
-         &::after, &::before {
+
+         &::after,
+         &::before {
             background-color: $color-white;
          }
       }
@@ -70,7 +81,8 @@ body {
       &--black {
          color: $color-black;
 
-         &::after, &::before {
+         &::after,
+         &::before {
             background-color: $color-black;
          }
       }
@@ -81,18 +93,12 @@ body {
    font-weight: 700;
    font-size: 1.8rem;
    color: $color-black;
-
-   &:hover {
-      color: $color-primary;
-   }
 }
 
-
-// SECTION STRIPE
-
-.section-stripe__text {
-   font-family: 'Playfair Display', serif;
-   font-size: 2.3rem;
+.stripe-p {
+   font-size: 2rem;
    color: $color-grey-text;
+   font-family: 'Playfair Display', serif;
    text-align: center;
+   letter-spacing: 2px;
 }

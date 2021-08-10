@@ -1,12 +1,27 @@
+.section-services {
+   padding: 5rem 0;
+}
+
 .feature-box {
+
+   @include respond(tab-port) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
    &__icon {
-      display: block;
-      width: 50%;
+      display: inline-block;
       font-size: 3rem;
       background-color: $color-grey-light-2;
       padding: 3rem;
-      margin-bottom: 3rem;
       text-align: center;
+      border-radius: 5%;
+      margin-bottom: 4rem;
+
+      @include respond(tab-port) {
+         margin-bottom: 0;
+      }
 
       &:hover {
          transform: translateY(-1.5rem) scale(1.03);
@@ -16,21 +31,31 @@
 
    &__text {
 
+      @include respond(tab-port) {
+         width: 78%;
+      }
+
       &:after {
          display: block;
          content: "";
          width: 30%;
          background-color: $color-black;
          padding: .1rem 1rem;
-         margin-top: 3rem;
+         margin-top: 4rem;
+
+         @include respond(tab-port) {
+            display: none;
+         }
       }
    }
 
-   
    &:hover .heading-tertiary {
       color: $color-primary;
+      transition: all 0.3s ease;
    }
+
    &:hover &__text:after {
       background-color: $color-primary;
+      transition: all 0.3s ease;
    }
 }

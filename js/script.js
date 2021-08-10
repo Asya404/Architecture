@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-   $('.project-items').isotope({
-      itemSelector: '.project-item',
-      layoutMode: 'masonry',
-      sortBy: 'original-order'
-   });
-
    $('.project-nav ul li').click(function () {
       $('.project-nav ul li').removeClass('active');
       $(this).addClass('active');
@@ -15,6 +9,12 @@ $(document).ready(function () {
          filter: selector
       });
       return false;
+   });
+
+   $('.project-items').isotope({
+      itemSelector: '.project-item',
+      layoutMode: 'masonry',
+      setTimeout: -1
    });
 
    $(".slider1").owlCarousel({
@@ -33,7 +33,7 @@ $(document).ready(function () {
       items: 1,
       nav: true,
       dots: false,
-      navText: ["<i class='testimonial__arrow testimonial__arrow--l icon-arrows-left'></i>", "<i class='testimonial__arrow testimonial__arrow--r icon-arrows-right'></i>"]
+      navText: ["<i class='testimonial__arrow testimonial__arrow--l icon-arrows-left-double-32'></i>", "<i class='testimonial__arrow testimonial__arrow--r icon-arrows-right-double'></i>"]
    });
 
 });

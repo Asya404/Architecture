@@ -1,0 +1,36 @@
+.section-blog {
+   padding: 5rem 0;
+   background-color: $color-grey-bg;
+}
+
+.blog-features {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 3rem;
+
+   @include respond(tab-port) {
+      flex-wrap: wrap;
+   }
+}
+
+.blog-feature {
+   display: block;
+   width: 24%;
+   background-color: $color-white;
+   padding: 3rem;
+   border-radius: 3%;
+
+   @include respond(tab-port) {
+      width: 48%;
+      margin-bottom: 2rem;
+   }
+
+   &__text {
+      margin-bottom: 3rem;
+   }
+
+   &:hover .btn-text {
+      color: $color-primary;
+      transition: all 0.3s ease;
+   }
+}

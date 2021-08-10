@@ -1,0 +1,51 @@
+.section-footer {
+   padding: 4rem 0;
+   background-color: $color-grey-dark;
+}
+
+.footer {
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+
+   @include respond(tab-port) {
+      width: 100%;
+   }
+
+   &__inner {
+      @include respond(tab-port) {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   &__icons {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      @include respond(tab-port) {
+         margin: 0;
+      }
+   }
+
+   &__icon {
+      border: 0.5px solid $color-grey-light;
+      padding: 0.9rem;
+      color: $color-grey-text;
+      font-size: 1.4rem;
+
+      &:hover {
+         color: $color-grey-dark;
+         background-color: $color-primary;
+         border: 0.5px solid $color-grey-dark;
+         transition: all 0.3s ease;
+      }
+   }
+
+   &__copyright {
+      color: $color-grey-light;
+   }
+}

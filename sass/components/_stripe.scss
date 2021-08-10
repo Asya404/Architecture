@@ -1,0 +1,30 @@
+.section-stripe {
+   padding: 10rem 0;
+   background-image: url(../img/stripebg.png);
+   background-size: cover;
+
+   &--2 {
+      background-image: url(../img/stripebg2.jpg);
+      padding: 4.5rem 0;
+   }
+}
+
+.stripe {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   &__btn {
+      color: $color-white;
+      border: 1px solid $color-white;
+
+      @include respond(tab-port) {
+         margin-top: 2rem;
+      }
+   }
+}

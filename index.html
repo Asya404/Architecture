@@ -13,22 +13,21 @@
 
    <link rel="stylesheet" href="css/icon-font2.css">
    <link rel="stylesheet" href="css/icon-font.css">
+   <link rel="stylesheet" href="css/fontawesome/all.min.css">
 
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
    <title>Document</title>
 </head>
 
 <body>
-
-
-
    <header class="header">
       <div class="row">
          <div class="navigation">
-            <img class="header__logo" src="img/logo.png" alt="Logo">
+            <div class="logo">Architecture<span class="logo__span">X</span></div>
 
             <ul class="navigation__list">
                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
@@ -41,7 +40,7 @@
       </div>
 
       <div class="header__text-box">
-         <h1 class="heading-primary">
+         <h1 class="heading-primary mb-12">
             <span class="heading-primary--main">Architecture Template</span>
             <span class="heading-primary--sub">Built with specialists</span>
          </h1>
@@ -51,59 +50,57 @@
 
    <main>
       <div class="section-services">
+         <div class="row">
          <div class="u-center-text">
-            <h2 class="heading-secondary">Our services</h2>
+            <h2 class="heading-secondary mt-16">Our services</h2>
             <div class="heading-secondary__divider heading-secondary__divider--black">&</div>
-            <div class="u-margin-bottom-medium">
+            <div class="mb-16">
                <p>Built is the template designed specially for architectures and builders, So start building you web
-                  site
-                  with built.</p>
+                  site with built.</p>
             </div>
          </div>
-
-         <div class="row">
             <div class="col-1-of-4">
                <div class="feature-box">
-                  <div class="u-margin-bottom-medium">
-                     <i class="feature-box__icon icon-basic-todo-txt"></i>
+                  <i class="feature-box__icon icon-basic-todo-txt"></i>
+                  <div class="feature-box__text">
+                     <h3 class="heading-tertiary">Consulting</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
+                     </p>
                   </div>
-                  <h3 class="heading-tertiary">Consulting</h3>
-                  <p class="feature-box__text">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
-                  </p>
                </div>
             </div>
             <div class="col-1-of-4">
                <div class="feature-box">
-                  <div class="u-margin-bottom-medium">
-                     <i class="feature-box__icon icon-basic-pencil-ruler"></i>
+                  <i class="feature-box__icon icon-basic-pencil-ruler"></i>
+                  <div class="feature-box__text">
+                     <h3 class="heading-tertiary">Design</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
+                     </p>
                   </div>
-                  <h3 class="heading-tertiary">Design</h3>
-                  <p class="feature-box__text">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
-                  </p>
                </div>
             </div>
             <div class="col-1-of-4">
                <div class="feature-box">
-                  <div class="u-margin-bottom-medium">
-                     <i class="feature-box__icon icon-basic-clock"></i>
+                  <i class="feature-box__icon icon-basic-clock"></i>
+                  <div class="feature-box__text">
+                     <h3 class="heading-tertiary feature-box__heading">Planning</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
+                     </p>
                   </div>
-                  <h3 class="heading-tertiary feature-box__heading">Planning</h3>
-                  <p class="feature-box__text">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
-                  </p>
                </div>
             </div>
             <div class="col-1-of-4">
                <div class="feature-box">
-                  <div class="u-margin-bottom-medium">
-                     <i class="feature-box__icon icon-basic-home"></i>
+                  <i class="feature-box__icon icon-basic-home"></i>
+                  <div class="feature-box__text">
+                     <h3 class="heading-tertiary">Building</h3>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
+                     </p>
                   </div>
-                  <h3 class="heading-tertiary">Building</h3>
-                  <p class="feature-box__text">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aperiam suscipit explicabo laborum.
-                  </p>
                </div>
             </div>
          </div>
@@ -111,37 +108,38 @@
 
 
       <div class="section-stripe">
-         <p class="section-stripe__text">Felis dolor integer facilisis habitasse a himenaeos urna aliquam taciti ipsum
+         <div class="row">
+         <p class="stripe-p">Felis dolor integer facilisis habitasse a himenaeos urna aliquam taciti ipsum
             amet
-            eleifend eros nulla.</p>
+         </p>
+         </div>
       </div>
 
 
       <div class="section-projects">
-         <div class="u-center-text">
-            <h2 class="heading-secondary">Our projects</h2>
-            <div class="heading-secondary__divider heading-secondary__divider--black">&</div>
-            <div class="u-margin-bottom-medium">
-               <p>Some of the projects we have done since it was founded.</p>
-            </div>
-         </div>
-
-         <div class="project-nav u-margin-bottom-medium">
-            <ul>
-               <li class=" project-nav__link heading-tertiary active" data-sort-by="original-order">All works</li>
-               <li class="project-nav__link heading-tertiary" data-filter=".buildings">Buildings</li>
-               <li class="project-nav__link heading-tertiary" data-filter=".interior">Interior design</li>
-               <li class="project-nav__link heading-tertiary" data-filter=".isolation">Isolation</li>
-               <li class="project-nav__link heading-tertiary" data-filter=".plumbing">Plumbing</li>
-               <li class="project-nav__link heading-tertiary" data-filter=".tiling">Tiling</li>
-            </ul>
-         </div>
-
          <div class="row">
-            <div class="project-items">
+            <div class="u-center-text">
+               <h2 class="heading-secondary">Our projects</h2>
+               <div class="heading-secondary__divider heading-secondary__divider--black">&</div>
+               <div class="mb-16">
+                  <p>Some of the projects we have done since it was founded.</p>
+               </div>
+            </div>
 
+            <div class="project-nav">
+               <ul>
+                  <li class=" project-nav__link heading-tertiary active" data-sort-by="original-order">All works</li>
+                  <li class="project-nav__link heading-tertiary" data-filter=".buildings">Buildings</li>
+                  <li class="project-nav__link heading-tertiary" data-filter=".interior">Interior design</li>
+                  <li class="project-nav__link heading-tertiary" data-filter=".isolation">Isolation</li>
+                  <li class="project-nav__link heading-tertiary" data-filter=".plumbing">Plumbing</li>
+                  <li class="project-nav__link heading-tertiary" data-filter=".tiling">Tiling</li>
+               </ul>
+            </div>
+
+            <div class="project-items">
                <div class="project-item interior isolation">
-                  <img class="project-item__img" src="img/project1-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project1.jpg" alt="photo of">
                   <div class="project-item__info">
                      <h3 class="project-item__title heading-tertiary">Creative Buidings</h3>
                      <p class="project-item__text">Interior Design. Buildings</p>
@@ -149,11 +147,11 @@
                </div>
 
                <div class="project-item interior isolation">
-                  <img class="project-item__img" src="img/project2-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project2.jpg" alt="photo of">
                </div>
 
                <div class="project-item buildings plumbing tiling isolation">
-                  <img class="project-item__img" src="img/project3-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project3.jpg" alt="photo of">
                   <div class="project-item__info">
                      <div class="project-item__title heading-tertiary">Creative Buidings</div>
                      <div class="project-item__text">Interior Design. Buildings</div>
@@ -161,11 +159,11 @@
                </div>
 
                <div class="project-item buildings interior plumbing">
-                  <img class="project-item__img" src="img/project4-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project4.jpg" alt="photo of">
                </div>
 
                <div class="project-item buildings isolation tiling plumbing">
-                  <img class="project-item__img" src="img/project5-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project5.jpg" alt="photo of">
                   <div class="project-item__info">
                      <div class="project-item__title heading-tertiary">Creative Buidings</div>
                      <div class="project-item__text">Interior Design. Buildings</div>
@@ -173,7 +171,7 @@
                </div>
 
                <div class="project-item buildings interior isolation">
-                  <img class="project-item__img" src="img/project6-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project6.jpg" alt="photo of">
                   <div class="project-item__info">
                      <div class="project-item__title heading-tertiary">Creative Buidings</div>
                      <div class="project-item__text">Interior Design. Buildings</div>
@@ -181,15 +179,15 @@
                </div>
 
                <div class="project-item buildings plumbing tiling">
-                  <img class="project-item__img" src="img/project7-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project7.jpg" alt="photo of">
                </div>
 
                <div class="project-item buildings interior plumbing">
-                  <img class="project-item__img" src="img/project8-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project8.jpg" alt="photo of">
                </div>
 
                <div class="project-item buildings isolation tiling">
-                  <img class="project-item__img" src="img/project9-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project9.jpg" alt="photo of">
                   <div class="project-item__info">
                      <div class="project-item__title heading-tertiary">Creative Buidings</div>
                      <div class="project-item__text">Interior Design. Buildings</div>
@@ -197,15 +195,15 @@
                </div>
 
                <div class="project-item interior isolation tiling plumbing">
-                  <img class="project-item__img" src="img/project10-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project10.jpg" alt="photo of">
                </div>
 
                <div class="project-item buildings plumbing tiling">
-                  <img class="project-item__img" src="img/project11-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project11.jpg" alt="photo of">
                </div>
 
                <div class="project-item interior plumbing tiling">
-                  <img class="project-item__img" src="img/project12-small.jpg" alt="photo of">
+                  <img class="project-item__img" src="img/project12.jpg" alt="photo of">
                   <div class="project-item__info">
                      <div class="project-item__title heading-tertiary">Creative Buidings</div>
                      <div class="project-item__text">Interior Design. Buildings</div>
@@ -231,58 +229,140 @@
             <h2 class="heading-secondary heading-secondary--white">What They Say</h2>
             <div class="heading-secondary__divider heading-secondary__divider--white">&</div>
 
-            <div class="testimonials owl-carousel slider2">
-               <div class="testimonial">
-                  <figure class="testimonial__shape"><img src="img/testimonial1.jpg" class="testimonial__img" alt="">
-                  </figure>
+            <div class="u-center-text">
+               <div class="testimonials owl-carousel slider2">
+                  <div class="testimonial">
+                     <figure class="testimonial__shape"><img src="img/testimonial1.jpg" class="testimonial__img" alt="">
+                     </figure>
 
-                  <blockquote class="testimonial__text">
-                     Lectus sem potenti placerat taciti nullam sit proin lacus sociis posuere cras eu nostra a aenean
-                     maecenas nibh ad metus. Ad parturient vestibulum mi magnis adipiscing ullamcorper ac a dolor
-                     potenti a eget amet a porttitor.
-                  </blockquote>
-                  <cite class="testimonial__caption">John Doe <span class="testimonial__span">- Envato</span></cite>
-               </div>
+                     <blockquote class="testimonial__text">
+                        Lectus sem potenti placerat taciti nullam sit proin lacus sociis posuere cras eu nostra a aenean
+                        maecenas nibh ad metus. Ad parturient vestibulum mi magnis adipiscing ullamcorper ac a dolor
+                        potenti a eget amet a porttitor.
+                     </blockquote>
+                     <cite class="testimonial__caption">John Doe <span class="testimonial__span">- Envato</span></cite>
+                  </div>
 
-               <div class="testimonial">
-                  <figure class="testimonial__shape"><img src="img/testimonial2.jpg" class="testimonial__img" alt="">
-                  </figure>
+                  <div class="testimonial">
+                     <figure class="testimonial__shape"><img src="img/testimonial2.jpg" class="testimonial__img" alt="">
+                     </figure>
 
-                  <blockquote class="testimonial__text">
-                     Soluta tempore neque nobis labore omnis,
-                     necessitatibus corrupti. Nihil, velit ullam? Corporis velit commodi dolor veritatis voluptas
-                     reiciendis labore consectetur accusamus libero!
-                  </blockquote>
-                  <cite class="testimonial__caption">Tom Aldahn <span class="testimonial__span">- Envato</span></cite>
-               </div>
+                     <blockquote class="testimonial__text">
+                        Soluta tempore neque nobis labore omnis,
+                        necessitatibus corrupti. Nihil, velit ullam? Corporis velit commodi dolor veritatis voluptas
+                        reiciendis labore consectetur accusamus libero!
+                     </blockquote>
+                     <cite class="testimonial__caption">Tom Aldahn <span class="testimonial__span">- Envato</span></cite>
+                  </div>
 
-               <div class="testimonial">
-                  <figure class="testimonial__shape"><img src="img/testimonial3.jpg" class="testimonial__img" alt="">
-                  </figure>
+                  <div class="testimonial">
+                     <figure class="testimonial__shape"><img src="img/testimonial3.jpg" class="testimonial__img" alt="">
+                     </figure>
 
-                  <blockquote class="testimonial__text">
-                     Sed recusandae odio ad quis. Sint quia
-                     officia libero ab eius a reiciendis? Quas mollitia repudiandae error fuga molestiae, dolore
-                     repellat. Incidunt.
-                  </blockquote>
-                  <cite class="testimonial__caption">Amanda Baker <span class="testimonial__span">- Envato</span></cite>
-               </div>
+                     <blockquote class="testimonial__text">
+                        Sed recusandae odio ad quis. Sint quia
+                        officia libero ab eius a reiciendis? Quas mollitia repudiandae error fuga molestiae, dolore
+                        repellat. Incidunt.
+                     </blockquote>
+                     <cite class="testimonial__caption">Amanda Baker <span class="testimonial__span">- Envato</span></cite>
+                  </div>
 
-               <div class="testimonial">
-                  <figure class="testimonial__shape"><img src="img/testimonial4.jpg" class="testimonial__img" alt="">
-                  </figure>
+                  <div class="testimonial">
+                     <figure class="testimonial__shape"><img src="img/testimonial4.jpg" class="testimonial__img" alt="">
+                     </figure>
 
-                  <blockquote class="testimonial__text">
-                     Laborum necessitatibus, totam, voluptate
-                     obcaecati eaque eligendi modi amet facilis ipsam voluptatum numquam soluta quidem pariatur quam
-                     maiores dignissimos, dolorem iure reprehenderit.
-                  </blockquote>
-                  <cite class="testimonial__caption">Michael Walker <span class="testimonial__span">-
-                        Envato</span></cite>
+                     <blockquote class="testimonial__text">
+                        Laborum necessitatibus, totam, voluptate
+                        obcaecati eaque eligendi modi amet facilis ipsam voluptatum numquam soluta quidem pariatur quam
+                        maiores dignissimos, dolorem iure reprehenderit.
+                     </blockquote>
+                     <cite class="testimonial__caption">Michael Walker <span class="testimonial__span">-
+                           Envato</span></cite>
+                  </div>
                </div>
             </div>
          </div>
       </div>
+
+
+   <div class="section-blog">
+      <div class="row">
+         <div class="u-center-text">
+            <h2 class="heading-secondary">Blog</h2>
+            <div class="heading-secondary__divider heading-secondary__divider--black">&</div>
+            <div class="mb-16">
+               <p>Nulla nullam a mattis semper a vestibulum commodo mi consectetur a penatibus.</p>
+            </div>
+         </div>
+
+         <div class="blog-features">
+            <div class="blog-feature">
+               <div class="heading-tertiary mb-8">Aptent id id inceptos nam pretium</div>
+               <p class="blog-feature__text">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel
+                  suspendisse fringilla.
+                  Donec a vulputate aenean iaculis in id nibh a odio.</p>
+               <a href="#" class="btn-text">Read more</a>
+            </div>
+
+            <div class="blog-feature">
+               <div class="heading-tertiary mb-8">Aptent id id inceptos nam pretium</div>
+               <p class="blog-feature__text">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel
+                  suspendisse fringilla.
+                  Donec a vulputate aenean iaculis in id nibh a odio.</p>
+               <a href="#" class="btn-text">Read more</a>
+            </div>
+
+            <div class="blog-feature">
+               <div class="heading-tertiary mb-8">Aptent id id inceptos nam pretium</div>
+               <p class="blog-feature__text">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel
+                  suspendisse fringilla.
+                  Donec a vulputate aenean iaculis in id nibh a odio.</p>
+               <a href="#" class="btn-text">Read more</a>
+            </div>
+
+            <div class="blog-feature">
+               <div class="heading-tertiary mb-8">Aptent id id inceptos nam pretium</div>
+               <p class="blog-feature__text">Id nulla cum mi diam dui quam mi donec dui parturient cum suscipit amet vel
+                  suspendisse fringilla.
+                  Donec a vulputate aenean iaculis in id nibh a odio.</p>
+               <a href="#" class="btn-text">Read more</a>
+            </div>
+         </div>
+
+         <div class="u-center-text">
+            <a href="#" class="btn-text border-">View all blog post</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="section-stripe section-stripe--2">
+      <div class="row">
+         <div class="stripe">
+            <p class="stripe-p">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="btn stripe__btn">Buy now</div>
+         </div>
+      </div>
+   </div>
+
+   <footer class="section-footer">
+      <div class="row">
+         <div class="footer">
+            <div class="footer__inner">
+               <div class="logo mb-8">Architecture<span class="logo__span">X</span></div>
+
+               <div class="footer__icons mb-12">
+               <i class="fab fa-facebook footer__icon"></i>
+               <i class="fab fa-twitter footer__icon"></i>
+               <i class="fab fa-google-plus-g footer__icon"></i>
+               <i class="fab fa-linkedin-in footer__icon"></i>
+               <i class="fab fa-instagram footer__icon"></i>
+               </div>
+         </div>
+
+         <p class="footer__copyright">Copyright © 2015Theme Design by TeaTeam</p>
+         </div>
+      </div>
+   </footer>
 
 
 
@@ -292,9 +372,6 @@
 
 
    </main>
-
-
-
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <script src="js/script.js"></script>
    <script src="js/isotope.pkgd.min.js"></script>
