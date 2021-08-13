@@ -11,12 +11,6 @@ $(document).ready(function () {
       return false;
    });
 
-   // $('.project-items').isotope({
-   //    itemSelector: '.project-item',
-   //    layoutMode: 'masonry',
-   //    setTimeout: -1
-   // });
-
    setTimeout(function () {
       $('.project-items').isotope({
          itemSelector: '.project-item',
@@ -42,5 +36,14 @@ $(document).ready(function () {
       dots: false,
       navText: ["<i class='testimonial__arrow testimonial__arrow--l icon-arrows-left-double-32'></i>", "<i class='testimonial__arrow testimonial__arrow--r icon-arrows-right-double'></i>"]
    });
+
+   /* Mobile nav */
+   const btnNavEl = document.querySelector('.btn-mobile-nav');
+   const headerEl = document.querySelector('.header');
+
+   btnNavEl.addEventListener('click', function(){
+      headerEl.classList.toggle('nav-open');
+   });
+
 
 });
