@@ -14,9 +14,9 @@ $(document).ready(function () {
    setTimeout(function () {
       $('.project-items').isotope({
          itemSelector: '.project-item',
-         layoutMode: 'masonry',
+         layoutMode: 'masonry'
       });
-   }, 1000)
+   }, 1000);
 
    $(".slider1").owlCarousel({
       items: 3,
@@ -46,4 +46,15 @@ $(document).ready(function () {
    });
 
 
+
+
+   // const obs = new IntersectionObserver(function (entries) {
+   //    const ent = entries[0];
+   //    console.log(ent);
+   // }, 
+   // {
+   //    root: null,
+   //    threshold: 0
+   // });
+   // obs.observe(headerEl);
 });
