@@ -117,7 +117,8 @@ body {
   width: 100%; }
   .header__inner {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
 
 .hero {
   height: 56vh;
@@ -152,11 +153,19 @@ body {
 .section-services {
   padding: 5rem 0; }
 
+.features {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .features {
+      flex-wrap: wrap; } }
+
 @media only screen and (max-width: 56.25em) {
   .feature-box {
     display: flex;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center;
+    margin-bottom: 2rem; } }
 
 .feature-box__icon {
   display: inline-block;
@@ -461,29 +470,6 @@ body {
     content: "";
     display: table;
     clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .navigation {
   width: 45%; }
@@ -500,9 +486,9 @@ body {
     text-decoration: none;
     color: #ffb932;
     text-transform: uppercase;
-    padding-bottom: 0.5rem;
     border-bottom: 1.5px solid transparent;
-    transition: border-bottom 0.2s; }
+    transition: all 0.2s ease;
+    padding: 0.7rem 0; }
     @media only screen and (max-width: 56.25em) {
       .navigation__link:link, .navigation__link:visited {
         font-size: 3rem; } }
@@ -562,5 +548,5 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(59, 57, 57, 0.13);
+  background-color: rgba(59, 57, 59, 0.2);
   z-index: 9999; }

@@ -2,12 +2,22 @@
    padding: 5rem 0;
 }
 
+.features {
+   display: flex;
+   justify-content: space-between;
+
+   @include respond(tab-port) {
+      flex-wrap: wrap;
+   }
+}
+
 .feature-box {
 
    @include respond(tab-port) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 2rem;
    }
 
    &__icon {

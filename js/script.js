@@ -47,14 +47,23 @@ $(document).ready(function () {
 
 
 
+   const sectionHeroEl = document.querySelector('.hero');
 
-   // const obs = new IntersectionObserver(function (entries) {
-   //    const ent = entries[0];
-   //    console.log(ent);
-   // }, 
-   // {
-   //    root: null,
-   //    threshold: 0
-   // });
-   // obs.observe(headerEl);
+   const obs = new IntersectionObserver(function (entries) {
+      const ent = entries[0];
+      console.log(ent); 
+
+      if(ent.isIntersecting === false) {
+        document.querySelector('.header').classList.add('stickys');
+      }
+         
+   }, 
+   {
+      root: null,
+      threshold: 0
+   });
+   obs.observe(sectionHeroEl);
+
+
+
 });

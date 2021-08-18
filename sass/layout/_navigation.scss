@@ -19,9 +19,9 @@
          text-decoration: none;
          color: $color-primary;
          text-transform: uppercase;
-         padding-bottom: 0.5rem;
          border-bottom: 1.5px solid transparent;
-         transition: border-bottom 0.2s;
+         transition: all 0.2s ease;
+         padding: 0.7rem 0;
 
          @include respond(tab-port) {
             font-size: 3rem;
@@ -112,6 +112,6 @@
    top: 0;
    left: 0;
    width: 100%;
-   background-color: rgba(59, 57, 57, 0.13);
+   background-color: rgba(59, 57, 59, 0.2);
    z-index: 9999;
 }
