@@ -60,12 +60,24 @@
       font-size: 2rem;
       color: $color-white;
 
+      &:hover {
+         color: $color-primary;
+      }
+
       &--l {
-         left: -10%;
+         left: 5%;
+
+         @include respond(tab-port) {
+            left: -5%;
+         }
       }
 
       &--r {
-         right: -10%;
+         right: 5%;
+
+         @include respond(tab-port) {
+            right: -5%;
+         }
       }
    }
 }

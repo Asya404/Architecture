@@ -1,6 +1,10 @@
 .section-projects {
    padding: 4.5rem 0;
    background-color: $color-grey-bg;
+
+   @include respond(phone) {
+      padding: 3rem 0;
+   }
 }
 
 .project-nav {
@@ -49,6 +53,12 @@
 
    &__title {
       color: $color-primary;
+   }
+
+   &__text {
+      @include respond(tab-port) {
+         display: none;
+      }
    }
 
    &:hover &__img {

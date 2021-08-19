@@ -1,8 +1,5 @@
 .brands {
    position: relative;
-   margin: 0 auto;
-   width: 70%;
-   display: flex;
 
    &__logo {
       display: block;
@@ -19,6 +16,11 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: 2rem;
+
+      &:hover {
+         color: $color-primary;
+         transition: all 0.1s ease;
+      }
 
       &--l {
          left: 0;

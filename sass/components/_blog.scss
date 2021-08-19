@@ -1,6 +1,10 @@
 .section-blog {
    padding: 5rem 0;
    background-color: $color-grey-bg;
+
+   @include respond(phone) {
+      padding: 3rem 0;
+   }
 }
 
 .blog-features {
@@ -22,7 +26,14 @@
 
    @include respond(tab-port) {
       width: 48%;
-      margin-bottom: 2rem;
+
+      &:not(:last-child) {
+         margin-bottom: 2rem;
+      }
+   }
+
+   @include respond(phone) {
+      width: 100%;
    }
 
    &__text {

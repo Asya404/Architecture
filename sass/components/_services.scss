@@ -1,5 +1,9 @@
 .section-services {
    padding: 5rem 0;
+
+   @include respond(phone) {
+      padding: 3rem 0;
+   }
 }
 
 .features {
@@ -43,6 +47,10 @@
 
       @include respond(tab-port) {
          width: 78%;
+      }
+
+      @include respond(phone) {
+         width: 74%;
       }
 
       &:after {

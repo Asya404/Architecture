@@ -45,18 +45,14 @@ $(document).ready(function () {
       headerEl.classList.toggle('nav-open');
    });
 
-
-
    const sectionHeroEl = document.querySelector('.hero');
-
    const obs = new IntersectionObserver(function (entries) {
       const ent = entries[0];
       console.log(ent); 
 
       if(ent.isIntersecting === false) {
-        document.querySelector('.header').classList.add('stickys');
+        document.querySelector('.header').classList.add('stickies');
       }
-         
    }, 
    {
       root: null,
@@ -64,6 +60,10 @@ $(document).ready(function () {
    });
    obs.observe(sectionHeroEl);
 
-
-
+   $("#menu, #logo, #services").on("click", "a", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+         top = $(id).offset().top;
+      $('body,html').animate({ scrollTop: top }, 1000);
+   });
 });

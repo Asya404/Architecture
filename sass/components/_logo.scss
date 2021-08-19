@@ -8,4 +8,8 @@
    &__span {
       color: $color-primary
    }
+
+   @include respond(tab-port) {
+      margin-bottom: 0;
+   }
 }

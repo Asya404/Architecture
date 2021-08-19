@@ -3,6 +3,10 @@
    background-image: url(../img/stripebg.png);
    background-size: cover;
 
+   @include respond(phone) {
+      padding: 4rem 0;
+   }
+
    &--2 {
       background-image: url(../img/stripebg2.jpg);
       padding: 4.5rem 0;
